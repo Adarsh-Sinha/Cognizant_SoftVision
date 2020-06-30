@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.2 on darwin)" generated="20200701 01:08:17.363" rpa="false">
+<suite id="s1" name="Shopping" source="/Users/kaivalyajain/PycharmProjects/Facet/Facet_ATS/Cognizant/Shopping.robot">
+<test id="s1-t1" name="launch Amazon app application">
+<kw name="launch application">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://127.0.0.1:4723/wd/hub</arg>
+<arg>app=/Users/kaivalyajain/Downloads/Amazon_shopping.apk</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=10.0</arg>
+<arg>deviceName=Redmi Note 8 Pro</arg>
+<arg>udid=ofuwmbbemjfmfeon</arg>
+</arguments>
+<status status="PASS" starttime="20200701 01:08:17.554" endtime="20200701 01:08:29.059"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200701 01:08:31.061" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200701 01:08:29.060" endtime="20200701 01:08:31.061"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>amazon</arg>
+</arguments>
+<status status="PASS" starttime="20200701 01:08:31.062" endtime="20200701 01:08:31.763"></status>
+</kw>
+<status status="PASS" starttime="20200701 01:08:17.553" endtime="20200701 01:08:31.763"></status>
+</kw>
+<status status="PASS" starttime="20200701 01:08:17.553" endtime="20200701 01:08:31.763" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Login Application by user details">
+<kw name="Login application">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=sign_in_button</arg>
+</arguments>
+<msg timestamp="20200701 01:08:31.765" level="INFO">Clicking element 'id=sign_in_button'.</msg>
+<status status="PASS" starttime="20200701 01:08:31.764" endtime="20200701 01:08:31.849"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200701 01:08:33.851" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200701 01:08:31.849" endtime="20200701 01:08:33.852"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View[2]/android.view.View/android.view.View/android.view.View[3]/android.widget.EditText</arg>
+<arg>8147407660</arg>
+</arguments>
+<msg timestamp="20200701 01:08:33.854" level="INFO">Typing text '8147407660' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View[2]/android.view.View/android.view.View/android.view.View[3]/android.widget.EditText'</msg>
+<status status="PASS" starttime="20200701 01:08:33.852" endtime="20200701 01:08:34.171"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200701 01:08:36.174" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200701 01:08:34.172" endtime="20200701 01:08:36.174"></status>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>Continue</arg>
+</arguments>
+<status status="PASS" starttime="20200701 01:08:36.175" endtime="20200701 01:08:36.516"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200701 01:08:38.519" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200701 01:08:36.517" endtime="20200701 01:08:38.519"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[5]/android.view.View[2]/android.widget.EditText</arg>
+<arg>adarshgk</arg>
+</arguments>
+<msg timestamp="20200701 01:08:38.521" level="INFO">Typing text 'adarshgk' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[5]/android.view.View[2]/android.widget.EditText'</msg>
+<status status="PASS" starttime="20200701 01:08:38.519" endtime="20200701 01:08:39.102"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200701 01:08:41.104" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200701 01:08:39.103" endtime="20200701 01:08:41.105"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[5]/android.view.View[6]/android.widget.Button</arg>
+</arguments>
+<msg timestamp="20200701 01:08:41.107" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[5]/android.view.View[6]/android.widget.Button'.</msg>
+<status status="PASS" starttime="20200701 01:08:41.105" endtime="20200701 01:08:41.643"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200701 01:08:51.646" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200701 01:08:41.643" endtime="20200701 01:08:51.646"></status>
+</kw>
+<status status="PASS" starttime="20200701 01:08:31.764" endtime="20200701 01:08:51.647"></status>
+</kw>
+<status status="PASS" starttime="20200701 01:08:31.763" endtime="20200701 01:08:51.647" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Search 65 Inches TV">
+<kw name="Search TV">
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>English - EN</arg>
+</arguments>
+<status status="PASS" starttime="20200701 01:08:51.649" endtime="20200701 01:08:52.910"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200701 01:08:55.911" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200701 01:08:52.910" endtime="20200701 01:08:55.912"></status>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>Save Changes</arg>
+</arguments>
+<status status="PASS" starttime="20200701 01:08:55.912" endtime="20200701 01:08:56.626"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200701 01:08:59.626" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200701 01:08:56.626" endtime="20200701 01:08:59.627"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=com.amazon.mShop.android.shopping:id/rs_search_src_text</arg>
+</arguments>
+<msg timestamp="20200701 01:08:59.629" level="INFO">Clicking element 'id=com.amazon.mShop.android.shopping:id/rs_search_src_text'.</msg>
+<status status="PASS" starttime="20200701 01:08:59.627" endtime="20200701 01:09:00.002"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200701 01:09:03.005" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200701 01:09:00.002" endtime="20200701 01:09:03.005"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=com.amazon.mShop.android.shopping:id/rs_search_src_text</arg>
+<arg>65 Inches TV</arg>
+</arguments>
+<msg timestamp="20200701 01:09:03.007" level="INFO">Typing text '65 Inches TV' into text field 'id=com.amazon.mShop.android.shopping:id/rs_search_src_text'</msg>
+<status status="PASS" starttime="20200701 01:09:03.006" endtime="20200701 01:09:03.608"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200701 01:09:06.609" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200701 01:09:03.608" endtime="20200701 01:09:06.610"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.ViewAnimator/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[1]/android.widget.LinearLayout</arg>
+</arguments>
+<msg timestamp="20200701 01:09:06.613" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.ViewAnimator/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[1]/android.widget.LinearLayout'.</msg>
+<status status="PASS" starttime="20200701 01:09:06.610" endtime="20200701 01:09:08.790"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200701 01:09:13.791" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200701 01:09:08.790" endtime="20200701 01:09:13.791"></status>
+</kw>
+<status status="PASS" starttime="20200701 01:08:51.648" endtime="20200701 01:09:13.792"></status>
+</kw>
+<status status="PASS" starttime="20200701 01:08:51.647" endtime="20200701 01:09:13.792" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Select a Random TV from the list">
+<kw name="Select Random TV from the list">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.ViewAnimator/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[3]/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.TextView</arg>
+</arguments>
+<msg timestamp="20200701 01:09:13.795" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.ViewAnimator/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[3]/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.TextView'.</msg>
+<status status="PASS" starttime="20200701 01:09:13.794" endtime="20200701 01:09:14.555"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200701 01:09:24.557" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200701 01:09:14.555" endtime="20200701 01:09:24.557"></status>
+</kw>
+<status status="PASS" starttime="20200701 01:09:13.793" endtime="20200701 01:09:24.557"></status>
+</kw>
+<status status="PASS" starttime="20200701 01:09:13.793" endtime="20200701 01:09:24.558" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Check the cost and add to cart">
+<kw name="Check the cost and add to cart">
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>90</arg>
+<arg>50</arg>
+<arg>90</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20200701 01:09:24.560" endtime="20200701 01:09:25.886"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200701 01:09:28.888" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200701 01:09:25.886" endtime="20200701 01:09:28.889"></status>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>90</arg>
+<arg>50</arg>
+<arg>90</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20200701 01:09:28.889" endtime="20200701 01:09:30.200"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200701 01:09:33.204" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200701 01:09:30.201" endtime="20200701 01:09:33.204"></status>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>Add to Cart</arg>
+</arguments>
+<status status="PASS" starttime="20200701 01:09:33.204" endtime="20200701 01:09:33.811"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200701 01:09:36.814" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200701 01:09:33.812" endtime="20200701 01:09:36.815"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=com.amazon.mShop.android.shopping:id/action_bar_cart_count</arg>
+</arguments>
+<msg timestamp="20200701 01:09:36.818" level="INFO">Clicking element 'id=com.amazon.mShop.android.shopping:id/action_bar_cart_count'.</msg>
+<status status="PASS" starttime="20200701 01:09:36.816" endtime="20200701 01:09:37.025"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200701 01:09:40.028" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200701 01:09:37.026" endtime="20200701 01:09:40.028"></status>
+</kw>
+<status status="PASS" starttime="20200701 01:09:24.560" endtime="20200701 01:09:40.029"></status>
+</kw>
+<status status="PASS" starttime="20200701 01:09:24.559" endtime="20200701 01:09:40.029" critical="yes"></status>
+</test>
+<test id="s1-t6" name="Final checkout and proceed to payment">
+<kw name="Final checkout and proceed to payment">
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>Proceed to Buy</arg>
+</arguments>
+<status status="PASS" starttime="20200701 01:09:40.033" endtime="20200701 01:09:42.376"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200701 01:09:47.377" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200701 01:09:42.376" endtime="20200701 01:09:47.378"></status>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>Deliver to this address</arg>
+</arguments>
+<status status="PASS" starttime="20200701 01:09:47.378" endtime="20200701 01:09:47.744"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200701 01:09:52.745" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200701 01:09:47.745" endtime="20200701 01:09:52.746"></status>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>Continue</arg>
+</arguments>
+<status status="PASS" starttime="20200701 01:09:52.746" endtime="20200701 01:09:53.546"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>8</arg>
+</arguments>
+<msg timestamp="20200701 01:10:01.547" level="INFO">Slept 8 seconds</msg>
+<status status="PASS" starttime="20200701 01:09:53.546" endtime="20200701 01:10:01.547"></status>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>Net Banking</arg>
+</arguments>
+<status status="PASS" starttime="20200701 01:10:01.548" endtime="20200701 01:10:02.696"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200701 01:10:07.698" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200701 01:10:02.696" endtime="20200701 01:10:07.698"></status>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>Choose an Option</arg>
+</arguments>
+<status status="PASS" starttime="20200701 01:10:07.698" endtime="20200701 01:10:08.876"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200701 01:10:13.878" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200701 01:10:08.876" endtime="20200701 01:10:13.879"></status>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>Axis Bank</arg>
+</arguments>
+<status status="PASS" starttime="20200701 01:10:13.879" endtime="20200701 01:10:14.575"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200701 01:10:19.576" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200701 01:10:14.575" endtime="20200701 01:10:19.576"></status>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>Continue</arg>
+</arguments>
+<status status="PASS" starttime="20200701 01:10:19.576" endtime="20200701 01:10:20.283"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200701 01:10:25.285" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200701 01:10:20.283" endtime="20200701 01:10:25.285"></status>
+</kw>
+<status status="PASS" starttime="20200701 01:09:40.031" endtime="20200701 01:10:25.286"></status>
+</kw>
+<status status="PASS" starttime="20200701 01:09:40.030" endtime="20200701 01:10:25.286" critical="yes"></status>
+</test>
+<test id="s1-t7" name="Assertion check of price in product search screen vs checkout screen">
+<kw name="Assertion check of price in product search screen vs checkout screen">
+<kw name="Get Text" library="AppiumLibrary">
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<arguments>
+<arg>xpath=hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.ViewAnimator/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[3]/android.view.View[3]/android.view.View/android.view.View[3]/android.view.View[2]</arg>
+</arguments>
+<assign>
+<var>${order total}</var>
+</assign>
+<msg timestamp="20200701 01:10:25.867" level="INFO">Element 'xpath=hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.ViewAnimator/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[3]/android.view.View[3]/android.view.View/android.view.View[3]/android.view.View[2]' text is '   89,999' </msg>
+<msg timestamp="20200701 01:10:25.867" level="INFO">${order total} =    89,999</msg>
+<status status="PASS" starttime="20200701 01:10:25.290" endtime="20200701 01:10:25.867"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${price shown}</arg>
+</arguments>
+<status status="PASS" starttime="20200701 01:10:25.868" endtime="20200701 01:10:25.868"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${order total}</arg>
+</arguments>
+<status status="PASS" starttime="20200701 01:10:25.868" endtime="20200701 01:10:25.870"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Prices match in the product search screen and checkout screen</arg>
+</arguments>
+<status status="PASS" starttime="20200701 01:10:25.870" endtime="20200701 01:10:25.871"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200701 01:10:28.873" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200701 01:10:25.871" endtime="20200701 01:10:28.873"></status>
+</kw>
+<status status="PASS" starttime="20200701 01:10:25.289" endtime="20200701 01:10:28.873"></status>
+</kw>
+<status status="PASS" starttime="20200701 01:10:25.287" endtime="20200701 01:10:28.874" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200701 01:08:17.366" endtime="20200701 01:10:28.877"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0">Critical Tests</stat>
+<stat pass="7" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="7" fail="0" id="s1" name="Shopping">Shopping</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
